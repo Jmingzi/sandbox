@@ -1,0 +1,36 @@
+{
+  "name": "@xm/xapp-sandbox",
+  "version": "0.0.9",
+  "description": "",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "dumi dev",
+    "release": "father build",
+    "build:watch": "father dev",
+    "docs:build": "dumi build",
+    "prepare": "dumi setup",
+    "doctor": "father doctor",
+    "prepublishOnly": "npm run release"
+  },
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "devDependencies": {
+    "antd": "4",
+    "dumi": "^2.1.10",
+    "father": "^4.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

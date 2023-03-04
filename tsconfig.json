@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
+    "jsx": "react",
+    "baseUrl": "./",
+    "target": "es5",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "xapp-main": ["src"],
+      "xapp-main/*": ["src/*", "*"]
+    }
+  },
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+}
